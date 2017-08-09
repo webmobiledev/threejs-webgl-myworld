@@ -19,7 +19,14 @@
 				z-index: 100;
 				display:block;
 			}
-			#info a, .button { color: #f00; font-weight: bold; text-decoration: underline; cursor: pointer }
+			#info a, .button { color: #993428; font-weight: bold; cursor: pointer; text-decoration: none; }
+			.button {
+				border-right: 2px solid;
+				padding-right: 5px;
+			}
+			#info a:hover, .button:hover {
+				color: #bb6655;
+			}
 		</style>
 	</head>
 	<body>
@@ -27,10 +34,10 @@
 		<div id="container"></div>
 		<div id="info">
 			<p>Type to enter new text</p>
-			 <span class="button" id="color">change color</span>, 
-			<span class="button" id="font">change font</span>,
-			<span class="button" id="weight">change weight</span>,
-			<a id="permalink" href="#">permalink</a>
+			 <span class="button" id="color">Color</span>
+			<span class="button" id="font">Font</span>
+			<span class="button" id="weight">Weight</span>
+			<a id="permalink" href="#">Link</a>
         </div>
         
 		<script src="js/three.js"></script>
